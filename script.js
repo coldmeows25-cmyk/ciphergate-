@@ -6,7 +6,6 @@ window.onload = function() {
       let value = input.value.toLowerCase();
 
       if (value === "ciphers") {
-        document.body.innerHTML = `
           <div style="color:lime; background:black; height:100vh; display:flex; justify-content:center; align-items:center; font-family:monospace; text-align:center;">
             <div>
               <h1>WELCOME TO CIPHERGATE</h1>
