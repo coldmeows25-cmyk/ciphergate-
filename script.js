@@ -8,7 +8,6 @@ document.getElementById("answer").addEventListener("keydown", function(e) {
           <div>
             <h1>WELCOME TO CIPHERGATE</h1>
             <p>> ACCESS GRANTED</p>
-            <p>> You are now inside the system</p>
           </div>
         </div>
       `;
