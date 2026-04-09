@@ -1,21 +1,15 @@
-window.onload = function() {
-  const input = document.getElementById("answer");
+function checkCode() {
+  const value = document.getElementById("answer").value.toLowerCase();
 
-  input.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-      let value = input.value.toLowerCase();
+  if (value === "ciphers") {
+    document.getElementById("message").innerText = "ACCESS CHECKING...";
 
-      if (value === "ciphers") {
-          <div style="color:lime; background:black; height:100vh; display:flex; justify-content:center; align-items:center; font-family:monospace; text-align:center;">
-            <div>
-              <h1>WELCOME TO CIPHERGATE</h1>
-              <p>> ACCESS GRANTED</p>
-            </div>
-          </div>
-        `;
-      } else {
-        document.getElementById("message").innerText = "> ACCESS DENIED";
-      }
-    }
-  });
-};
+    setTimeout(() => {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("welcome").style.display = "block";
+    }, 1200);
+
+  } else {
+    document.getElementById("message").innerText = "ACCESS DENIED";
+  }
+}
